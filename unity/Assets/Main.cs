@@ -27,8 +27,8 @@ public class Main : MonoBehaviour {
     /// </summary>
     public void OnBtnClick()
     {
-        //通过API来调用原生代码的方法
-        bool success = _ajc.Call<bool>("showToast","this is unity");
+        //通过API来调用原生代码的方法showToast(String)
+        bool success = _ajc.Call<bool>("showToast","This is unity");
         if(true == success)
         {
             //请求成功

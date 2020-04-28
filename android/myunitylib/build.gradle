@@ -6,8 +6,8 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 22
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
 
@@ -28,4 +28,9 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     compileOnly files('tempLibs/classes.jar') //使用compileOnly指定该jar只是开发时引用，编译时不导出
+
+    // rk语音离线指令SDK使用 -- begin
+    implementation 'com.rokid.ai.glass:instructsdk:1.3.4'
+    // 语音离线指令SDK使用 -- end
+
 }

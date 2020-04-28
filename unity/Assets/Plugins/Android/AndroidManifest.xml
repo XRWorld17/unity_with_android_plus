@@ -4,7 +4,7 @@
     <application
         android:name="com.jing.CustomApplication"
         android:label="@string/app_name">
-        <activity android:name="com.jing.CustomActivity"
+        <activity android:name="com.jing.RKVoiceRecogUnityPlayerActivity"
             android:label="@string/app_name"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
             <intent-filter>

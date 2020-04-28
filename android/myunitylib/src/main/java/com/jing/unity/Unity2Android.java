@@ -67,8 +67,10 @@ public class Unity2Android {
      * @return                  调用是否成功
      */
     public boolean showToast(String content){
+
         Toast.makeText(getActivity(),content,Toast.LENGTH_SHORT).show();
-        //这里是主动调用Unity中的方法，该方法之后unity部分会讲到
+
+        //这里是主动调用Unity中的方法FromAndroid(string content)，该方法之后unity部分会讲到
         callUnity("Main Camera","FromAndroid", "hello unity i'm android");
         return true;
     }
