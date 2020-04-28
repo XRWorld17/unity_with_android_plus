@@ -43,4 +43,22 @@ public class Main : MonoBehaviour {
     {
         text.text = content;
     }
+
+    /// <summary>
+    /// 原生层通过该方法传回信息
+    /// </summary>
+    /// <param name="content"></param>
+    public void unitydoNext(string content)
+    {
+        Debug.Log("---wwb--- unitydoNext!");
+    }
+
+    /// <summary>
+    /// 原生层通过该方法传回信息
+    /// </summary>
+    /// <param name="content"></param>
+    public void unitydoLast(string content)
+    {
+        Debug.Log("---wwb--- unitydoLast!");
+    }
 }

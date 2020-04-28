@@ -9,6 +9,7 @@ import com.rokid.glass.instruct.entity.EntityKey;
 import com.rokid.glass.instruct.entity.IInstructReceiver;
 import com.rokid.glass.instruct.entity.InstructConfig;
 import com.rokid.glass.instruct.entity.InstructEntity;
+import com.unity3d.player.UnityPlayer;
 
 public class RKVoiceRecogUnityPlayerActivity extends CustomActivity {
 
@@ -102,11 +103,14 @@ public class RKVoiceRecogUnityPlayerActivity extends CustomActivity {
 
 
     private void doNext() {
-        Log.d(TAG, "---doNext---" );
+        Log.d(TAG, "---java doNext---" );
+
+        UnityPlayer.UnitySendMessage("Main Camera","unitydoNext","arg1");
     }
 
     private void doLast() {
-        Log.d(TAG, "---doLast---" );
+        Log.d(TAG, "---java doLast---" );
+        UnityPlayer.UnitySendMessage("Main Camera","unitydoLast","arg2");
 
     }
 
