@@ -105,12 +105,12 @@ public class RKVoiceRecogUnityPlayerActivity extends CustomActivity {
     private void doNext() {
         Log.d(TAG, "---java doNext---" );
 
-        UnityPlayer.UnitySendMessage("Main Camera","unitydoNext","arg1");
+        UnityPlayer.UnitySendMessage("Main Camera","unitydoNext","下一个");
     }
 
     private void doLast() {
         Log.d(TAG, "---java doLast---" );
-        UnityPlayer.UnitySendMessage("Main Camera","unitydoLast","arg2");
+        UnityPlayer.UnitySendMessage("Main Camera","unitydoLast","上一个");
 
     }
 

@@ -51,6 +51,7 @@ public class Main : MonoBehaviour {
     public void unitydoNext(string content)
     {
         Debug.Log("---wwb--- unitydoNext!");
+        text.text = content;
     }
 
     /// <summary>
@@ -59,6 +60,7 @@ public class Main : MonoBehaviour {
     /// <param name="content"></param>
     public void unitydoLast(string content)
     {
-        Debug.Log("---wwb--- unitydoLast!");
+        Debug.Log("---wwb--- unitydoLast!" );
+        text.text = content;
     }
 }
